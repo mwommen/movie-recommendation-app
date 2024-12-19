@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  input, button {
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+  }
+  
+  button {
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .movie-card {
+    display: inline-block;
+    width: 200px;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .movie-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .movie-card .info {
+    margin-top: 10px;
+  }
+  
+  .movie-card h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .movie-card p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  #movies-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
