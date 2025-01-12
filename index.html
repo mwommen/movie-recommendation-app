@@ -4,6 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Movie Recommendation App</title>
+  
+  <!-- SB Admin Template Styles -->
+  <link href="dist/css/styles.css" rel="stylesheet">
+
+  <!-- Custom Styles (if any) -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,14 +18,38 @@
     <div class="input-container">
       <input type="text" id="movie-input" placeholder="Enter a genre or movie..." />
       <button id="recommend-btn">Recommend</button>
+    
     </div>
+
+       <!-- Filters -->
+       <div>
+        <label for="year-filter">Year:</label>
+        <select id="year-filter">
+          <option value="">All Years</option>
+        </select>
+      </div>
+  
+      <div>
+        <label for="rating-filter">Rating:</label>
+        <select id="rating-filter">
+          <option value="">All Ratings</option>
+        </select>
+          <button id="filter-btn">Filter</button>
+        </div>
+        
+
+      </div>
 
     <div id="movies-container">
       <!-- Movie cards will appear here -->
     </div>
+
   </div>
 
+  <!-- Include Axios and JS Files -->
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="app.js"></script>
+  <script src="dist/js/scripts.js"></script>
+
 </body>
 </html>
